@@ -20,15 +20,96 @@
   background-position: center;
   background-size: contain;
   background-color: black;
+  border: 3px dashed white;
+}
+
+.col-md-6 {
+  /*display:none;*/
+  margin-top: 10px;
+  margin-left: 225px;
+  background-color:rgba(0,0,0,0.7);
+  padding-top: 20px;
+  border: 2px dashed goldenrod;
+}
+
+.container {
+  text-align: center;
 }
 
 body {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/64/Caerph_great_hall.jpg");
   background-color: black;
+  background-position: center;
 }
 
-img {
-  background-repeat: no-repeat fixed;
-  background-position: absolute;
-  opacity: 0.7;
-  border-top: 3px dashed white;
+h3 {
+  text-decoration: underline;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+  color:white;
+  font-family: 'Yatra One', cursive;
+}
+
+footer {
+  background-color:rgba(0,0,0,0.7);
+  width:100%;
+  height:100px;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+footer h4 a{
+  color: goldenrod;
+  font-family: 'Yatra One', cursive;
+}
+
+footer h4 a:hover {
+  color: gold;
+  text-decoration: underline;
+  font-family: 'Yatra One', cursive;
+}
+
+footer h5 {
+  color: white;
+}
+
+#orderForm h4 {
+  font-size: 30px;
+  color: goldenrod;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+#order {
+  /*display:none;*/
+  background-color:rgba(0,0,0,0.7);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#orderForm {
+  font-size: 20px;
+  text-align: center;
+  color:white;
+  font-family: 'Yatra One', cursive;
+  /*display: none;*/
+}
+
+#submitOrder {
+  /*display:none;*/
+  font-weight: bold;
+  background-color: goldenrod;
+}
+
+#submitOrder:hover {
+  background-color: gold;
+  color:white;
+}
+
+select#size {
+  margin-left: 250px;
+  margin-bottom: 20px;
+  width: 400px;
 }

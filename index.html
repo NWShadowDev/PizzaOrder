@@ -10,12 +10,101 @@
     <title>Knights Table Pizza - Welcome </title>
   </head>
   <body>
-    <div class="container jumbotron">
+    <div class="container jumbotron"> <!-- Header start -->
       <h1>Knights Table Pizza</h1>
       <h4>We treat you like a KING!</h4>
+    </div> <!-- Header end -->
+    <div class="row container"> <!-- Order container start -->
+      <div class="col-md-12">
+        <form id = "order"> <!-- Order Form FORM Start -->
+          <h3>Fill out ye Old Form to pick ye toppers!</h3>
+            <div id="orderForm">
+              <div class="radio">
+                <h4>Toppings</h4><label> <!-- Toppings List start -->
+                  <input type="radio" name="toppings" id="toppingInput" value="1">
+                  Chicken
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="toppings" id="toppingInput" value="1">
+                  Pepperoni
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="toppings" id="toppingInput" value="2">
+                  Tofu
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="toppings" id="toppingInput" value="2">
+                  Pineapple
+                </label>
+              </div>
+              <div class="radio">
+                  <label>
+                    <input type="radio" name="toppings" id="toppingInput" value="2">
+                    Cashews
+                  </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="toppings" id="toppingInput" value="2">
+                  Diced Tomatoes
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="toppings" id="toppingInput" value="1">
+                  Bacon
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="toppings" id="toppingInput" value="2">
+                  Artichoke
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="toppings" id="toppingInput" value="2">
+                    Mozarella Cheese
+                  </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="toppings" id="toppingInput" value="2">
+                    Sauce
+                </label>
+              </div> <!-- Toppings List End -->
+              <h4>What size of pie would ye like?</h4>  <!-- Size List -->
+              <select class="form-control" id="size">
+                <option value="1">Small</option>
+                <option value="2">Medium</option>
+                <option value="3">Large</option>
+              </select> <!-- /Size List -->
+            </div> <!-- OrderForm DIV -->
+          <button id ="submitOrder" type="submit" class="btn">Submit Ye Order</button> <!-- SUBMIT form -->
+        </form> <!-- Order Form FORM End -->
+        <div class="col-md-6"> <!-- Order Info Start -->
+          <h3>Your Order:</h3>
+            <ul id="orderInfo">
+            </ul>
+        </div> <!-- Order Info End -->
+      </div>
     </div>
-    <div class="BGimg">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Caerph_great_hall.jpg">
-    </div>
+    <footer> <!-- Footer Start -->
+      <div class="row container">
+        <div class="col-sm-12">
+          <div id ="footer">
+            <h4><a href="#">ORDER NOW!</a></h4>
+            <h5>Store Phone: (360)-123-4567</h5>
+            <h5>Location: 1234 Camelot Ln, Camelot 98662. &copy; Knights Table Pizza 2016.</h5>
+          </div>
+        </div>
+      </div>
+    </footer> <!-- Footer End -->
   </body>
 </html>
