@@ -23,7 +23,7 @@
   border: 3px dashed white;
 }
 
-.col-md-6 {
+#orderInfo {
   display:none;
   margin-top: 10px;
   margin-left: 225px;

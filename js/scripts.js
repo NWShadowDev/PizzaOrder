@@ -1,12 +1,12 @@
 //Business Logic
-function Pizza(topping, size) {
-  this.topping = topping;
-  this.size = size;
-}
-
-Pizza.prototype.pizzaOrder = function() {
-  return this.topping + ", " + this.size;
-}
+// function Pizza(topping, size) {
+//   this.topping = topping;
+//   this.size = size;
+// }
+//
+// Pizza.prototype.pizzaOrder = function() {
+//   return this.topping + ", " + this.size;
+// }
 
 // function resetFields() {
 //   $(".topping").val("");
@@ -16,17 +16,19 @@ Pizza.prototype.pizzaOrder = function() {
 //User Interface Logic
 $(document).ready(function() {
   $("#submitOrder").submit(event) {
-    var inputtedToppings = parseInt($("input:radio[name=toppings]:checked").val());
-    var inputtedSize = parseInt($("#size").val());
-    var newOrder = (inputtedToppings + inputtedSize + "$");
+    // var totalCounter;
+    // var inputtedToppings = parseInt($("input:checkbox[name=toppings]:checked").val());
+    // var inputtedSize = parseInt($("#size").val());
+    // var newOrder = (inputtedToppings + inputtedSize + "$");
+// $("#orderInfo").append("<li>" + message[i] + "</li>");
 
-    if(inputtedToppings )
+
+
+
+    $("#orderInfo").show();
     event.preventDefault();
-
-    $(".col-md-6").show();
-
-    $("#orderInfo").text(newOrder);
-    $("input#orderInfo").val("");
+    // $("#orderInfo").text(newOrder);
+    $("#orderInfo").val("");
 
   });
 });
