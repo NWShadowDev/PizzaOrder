@@ -24,7 +24,7 @@
 }
 
 .col-md-6 {
-  /*display:none;*/
+  display:none;
   margin-top: 10px;
   margin-left: 225px;
   background-color:rgba(0,0,0,0.7);
@@ -83,7 +83,6 @@ footer h5 {
 }
 
 #order {
-  /*display:none;*/
   background-color:rgba(0,0,0,0.7);
   padding-top: 20px;
   padding-bottom: 20px;
@@ -94,18 +93,18 @@ footer h5 {
   text-align: center;
   color:white;
   font-family: 'Yatra One', cursive;
-  /*display: none;*/
 }
 
 #submitOrder {
-  /*display:none;*/
   font-weight: bold;
   background-color: goldenrod;
+  border: 3px solid black;
 }
 
 #submitOrder:hover {
-  background-color: gold;
+  background-color: goldenrod;
   color:white;
+  border: 3px solid black;
 }
 
 select#size {
