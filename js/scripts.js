@@ -8,9 +8,9 @@ Pizza.prototype.pizzaOrder = function() {
   return this.topping + ", " + this.size;
 }
 
-function isEmpty(value){
-    return (value === undefined || value == null || value.length <= 0) ? true : false;
-}
+// function isEmpty(value){
+//     return (value === undefined || value == null || value.length <= 0) ? true : false;
+// }
 
 function resetFields() {
   $(".topping").val("");
