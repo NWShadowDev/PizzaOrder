@@ -7,7 +7,7 @@
 // Pizza.prototype.pizzaOrder = function() {
 //   return this.topping + ", " + this.size;
 // }
-
+//
 // function resetFields() {
 //   $(".topping").val("");
 //   $("#size").val("");
@@ -15,20 +15,19 @@
 
 //User Interface Logic
 $(document).ready(function() {
-  $("#submitOrder").submit(event) {
-    // var totalCounter;
-    // var inputtedToppings = parseInt($("input:checkbox[name=toppings]:checked").val());
-    // var inputtedSize = parseInt($("#size").val());
-    // var newOrder = (inputtedToppings + inputtedSize + "$");
-// $("#orderInfo").append("<li>" + message[i] + "</li>");
 
+  $("form#order").submit(function(event) {
+  // debugger;
+    event.preventDefault();
+    var inputtedToppings = parseInt($("input:checkbox[name=toppings]:checked").val());
+    var inputtedSize = parseInt($("#size").val());
+    var newOrder = (inputtedToppings + inputtedSize + "$");
 
 
 
     $("#orderInfo").show();
-    event.preventDefault();
-    // $("#orderInfo").text(newOrder);
-    $("#orderInfo").val("");
+    $("#orderInfo").text(newOrder);
+    $("input#orderInfo").val("");
 
   });
 });
