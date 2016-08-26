@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=MedievalSharp|Yatra+One" rel="stylesheet">
@@ -17,6 +17,8 @@
     <div class="row container"> <!-- Order container start -->
       <div class="col-md-12">
         <form id = "order"> <!-- Order Form FORM Start -->
+          <h4>Enter your Name:</h4>
+          <input type="text" name="custName" placeholder="Enter Name" id="yourName">
           <h3>Fill out ye Old Form to pick ye pie!</h3>
             <div id="orderForm">
               <div class="checkbox">
@@ -81,16 +83,18 @@
               </div> <!-- Toppings List End -->
               <h4>What size of pie would ye like?</h4>  <!-- Size List -->
               <select class="form-control" id="size">
-                <option value="1">Small</option>
-                <option value="2">Medium</option>
-                <option value="3">Large</option>
+                <option value="5">Small</option>
+                <option value="12">Medium</option>
+                <option value="17">Large</option>
               </select> <!-- /Size List -->
             </div> <!-- OrderForm DIV -->
           <button id ="submitOrder" type="submit" class="btn">Submit Ye Order</button> <!-- SUBMIT form -->
         </form> <!-- Order Form FORM End -->
+        <div id = "orderHead">
+        <h3>Ye Order</h3>
+        </div>
         <div class="col-md-6" id="orderInfo"> <!-- Order Info Start -->
           <ul>
-            <h3>Ye Order</h3>
           </ul>
         </div> <!-- Order Info End -->
       </div>
