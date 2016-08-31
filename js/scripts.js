@@ -1,8 +1,7 @@
 //Business Logic
-function Pizza(topping, size, price) {
+function Pizza(topping, size) {
   this.topping = topping;
   this.size = size;
-  this.price = price;
 }
 
 Pizza.prototype.pizzaPrice = function() {
@@ -19,12 +18,8 @@ $(document).ready(function() {
       toppingsTotal += parseInt($(this).val());
     });
 
-    for (i = 0; i <	toppingsTotal.length; i++) {
-       	toppingsTotal[i].checked = true;
-    }
-
     var inputtedSize = parseInt($("#size").val());
-    var newOrder = (toppingsTotal,inputtedSize);
+    var newOrder = (toppingsTotal + inputtedSize);
     var customerName = $("#yourName").val();
 
     $("#orderHead").show();
