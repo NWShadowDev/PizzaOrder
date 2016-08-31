@@ -12,20 +12,20 @@ Pizza.prototype.pizzaPrice = function() {
 $(document).ready(function() {
 
   $("form#order").submit(function(event) {
-  debugger;
+  // debugger;
     event.preventDefault();
     var toppingsTotal = 0; $('input:checkbox[name=toppings]:checked').each(function() {
       toppingsTotal += parseInt($(this).val());
+
     });
 
     var inputtedSize = parseInt($("#size").val());
-    var newOrder = (toppingsTotal + inputtedSize);
+    var newOrder = new Pizza(toppingsTotal,inputtedSize);
     var customerName = $("#yourName").val();
-
+    console.log(newOrder);
     $("#orderHead").show();
     $("#orderInfo").show();
-    $("#orderInfo").text(customerName + ", " + "Your order total is: " + newOrder  + "Have a nice day!");
-    // $("input#orderInfo").val("");
+    $("#orderInfo").text(customerName + ", " + "Your order total is: " + newOrder.pizzaPrice() + "$"  + " Have a nice day!");
 
     });
   });
