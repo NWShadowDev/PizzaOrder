@@ -16,7 +16,12 @@ _This project is to demonstrate my skills in Javascript Object Oriented programm
 * _enter the "git clone" command into your respective terminal and paste the clone link to download files onto your PC/Mac_
 * _Enjoy! Feel free to email and send comments/recommendations! (see Support and Contact Details for the info)_
 
-_Please set your Resolution to 1024x768 for optimal viewing_
+OR
+
+* _View the Live project [here](https://nwshadowdev.github.io/PizzaOrder/)_
+
+* _Please set your Resolution to 1024x768 for optimal viewing_
+
 
 ## Behavior Driven Development (AKA: BDD)
 
@@ -55,6 +60,4 @@ _Git Bash for Windows_
 _Chrome Browser_
 
 ### License
-
-https://nwshadowdev.github.io/PizzaOrder/
 Copyright (c) 2016 **_Amber Farrington_**
